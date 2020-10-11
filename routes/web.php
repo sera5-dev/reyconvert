@@ -14,4 +14,9 @@ use \App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', 			[HomeController::class, 'index']);
+Route::get('/login', 	function () {
+	return view('login');
+});
+
+Route::post('/login', [HomeController::class, 'login'])->name('login');
