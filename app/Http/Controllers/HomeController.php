@@ -24,28 +24,38 @@ class HomeController extends Controller
 		return view('index', ['providers' => $providers, 'rates' => $rates]);
 	}
 
+	public function admin()
+	{
+		if (session('token')) {
+			$providers = $this->getProvider();
+			$rates = $this->getRate();
+			return view('admin', ['providers' => $providers, 'rates' => $rates]);
+		} else
+			return view('login');
+	}
+
 	public function login(Request $request)
 	{
 		$this->validate($request, [
 			'username' => 'required',
 			'password' => 'required',
 		]);
-		$data = json_decode(Http::post(env('API_URL') . '/login', [
-			'username' => $request->input('username'),
-			'password' => $request->input('password'),
-		])->body());
-
-		if (property_exists($data, 'token')) {
-			session()->put('token', $data->token);
-			$providers = $this->getProvider();
-			$rates = $this->getRate();
-			return view('admin', ['providers' => $providers, 'rates' => $rates]);
-		} else {
-			session()->flush();
-			echo "login failed";
-		}
 
 		try {
+			$data = json_decode(Http::post(env('API_URL') . '/login', [
+				'username' => $request->input('username'),
+				'password' => $request->input('password'),
+			])->body());
+
+			if (property_exists($data, 'token')) {
+				session()->put('token', $data->token);
+				$providers = $this->getProvider();
+				$rates = $this->getRate();
+				return view('admin', ['providers' => $providers, 'rates' => $rates]);
+			} else {
+				session()->flush();
+				echo "login failed";
+			}
 		} catch (\Exception $e) {
 			return response()->json([
 				'message' => "login failed",
@@ -56,5 +66,7 @@ class HomeController extends Controller
 
 	public function logout()
 	{
+		session()->flush();
+		return redirect()->route('home');
 	}
 }
