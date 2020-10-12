@@ -80,8 +80,8 @@
 				<th>id</th>
 				<th>provider</th>
 				<th>rate</th>
-				<th>uang</th>
 				<th>pulsa</th>
+				<th>uang</th>
 			</thead>
 			<tbody>
 				@foreach($rates as $rate)
