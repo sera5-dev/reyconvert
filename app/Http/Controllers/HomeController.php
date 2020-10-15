@@ -19,7 +19,12 @@ class HomeController extends Controller
 
 	function getUser()
 	{
-		return json_decode(Http::get(env('API_URL') . '/user')->body())->data;
+		return json_decode(Http::withToken(session('token'))->get(env('API_URL') . '/user')->body())->data;
+	}
+
+	function getTestimoni()
+	{
+		return json_decode(Http::withToken(session('token'))->get(env('API_URL') . '/testimoni')->body())->data;
 	}
 
 	public function index()
@@ -31,13 +36,13 @@ class HomeController extends Controller
 
 	public function admin()
 	{
-		if (session('token')) {
-			$providers = $this->getProvider();
-			$rates = $this->getRate();
-			$users = $this->getUser();
-			return view('admin', ['providers' => $providers, 'rates' => $rates, 'users' => $users]);
-		} else
-			return view('login');
+		return session('token') ?
+			view('admin', [
+				'providers' 	=> $this->getProvider(),
+				'rates' 			=> $this->getRate(),
+				'users' 			=> $this->getUser(),
+				'testimonis' 	=> $this->getTestimoni(),
+			]) : view('login');
 	}
 
 	public function login(Request $request)
@@ -55,9 +60,7 @@ class HomeController extends Controller
 
 			if (property_exists($data, 'token')) {
 				session()->put('token', $data->token);
-				$providers = $this->getProvider();
-				$rates = $this->getRate();
-				return view('admin', ['providers' => $providers, 'rates' => $rates]);
+				return redirect()->route('admin');
 			} else {
 				session()->flush();
 				echo "login failed";

@@ -199,6 +199,52 @@
 		</table>
 	</section>
 
+	<section>
+		<h2>Testimoni</h2>
+
+		<strong>create testimoni</strong>
+		<form action="{{ route('testi-create') }}" method="post">
+			@csrf
+			<div class="form-group">
+				<label for="nama">nama</label>
+				<input type="text" name="nama">
+			</div>
+			<div class="form-group">
+				<label for="kontak">kontak</label>
+				<input type="text" name="kontak">
+			</div>
+			<div class="form-group">
+				<label for="komentar">komentar</label>
+				<input type="text" name="komentar">
+			</div>
+			<div class="form-group">
+				<input type="submit" value="create">
+			</div>
+		</form>
+
+		<br />
+
+		<strong>testimoni list</strong>
+		<table border="1">
+			<thead>
+				<th>id</th>
+				<th>nama</th>
+				<th>kontak</th>
+				<th>komentar</th>
+			</thead>
+			<tbody>
+				@foreach($testimonis as $testi)
+				<tr>
+					<td>{{$testi->id}}</td>
+					<td>{{$testi->nama}}</td>
+					<td>{{$testi->kontak}}</td>
+					<td>{{$testi->komentar}}</td>
+				</tr>
+				@endforeach
+			</tbody>
+		</table>
+	</section>
+
 </body>
 
 </html>

@@ -116,3 +116,35 @@ Route::delete('/rate', function (Request $request) {
 		]);
 	}
 })->name('rate-delete');
+
+Route::post('/testimoni', function (Request $request) {
+	try {
+		Http::withToken(session('token'))->post(env('API_URL') . '/testimoni', [
+			'nama' 			=> $request->input('nama'),
+			'kontak' 		=> $request->input('kontak'),
+			'komentar' 	=> $request->input('komentar'),
+		]);
+
+		return redirect()->route('admin');
+	} catch (\Exception $e) {
+		return response()->json([
+			'message' => 'create testimoni failed',
+			'error' => $e,
+		]);
+	}
+})->name('testi-create');
+
+Route::delete('/testimoni', function (Request $request) {
+	try {
+		Http::withToken(session('token'))->delete(env('API_URL') . '/testimoni', [
+			'id' => $request->input('id'),
+		]);
+
+		return redirect()->route('admin');
+	} catch (\Exception $e) {
+		return response()->json([
+			'message' => 'delete testimoni failed',
+			'error' => $e,
+		]);
+	}
+})->name('testimoni-delete');
