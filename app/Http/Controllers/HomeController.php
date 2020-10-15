@@ -24,14 +24,19 @@ class HomeController extends Controller
 
 	function getTestimoni()
 	{
-		return json_decode(Http::withToken(session('token'))->get(env('API_URL') . '/testimoni')->body())->data;
+		return json_decode(Http::get(env('API_URL') . '/testimoni')->body())->data;
 	}
 
 	public function index()
 	{
-		$providers = $this->getProvider();
-		$rates = $this->getRate();
-		return view('index', ['providers' => $providers, 'rates' => $rates]);
+		$providers 	= $this->getProvider();
+		$rates 			= $this->getRate();
+		$testimonis = $this->getTestimoni();
+		return view('index', [
+			'providers' 	=> $providers,
+			'rates' 			=> $rates,
+			'testimonis' 	=> $testimonis,
+		]);
 	}
 
 	public function admin()
