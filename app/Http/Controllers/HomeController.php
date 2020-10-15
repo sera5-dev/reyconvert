@@ -17,6 +17,11 @@ class HomeController extends Controller
 		return json_decode(Http::get(env('API_URL') . '/rate')->body())->data;
 	}
 
+	function getUser()
+	{
+		return json_decode(Http::get(env('API_URL') . '/user')->body())->data;
+	}
+
 	public function index()
 	{
 		$providers = $this->getProvider();
@@ -29,7 +34,8 @@ class HomeController extends Controller
 		if (session('token')) {
 			$providers = $this->getProvider();
 			$rates = $this->getRate();
-			return view('admin', ['providers' => $providers, 'rates' => $rates]);
+			$users = $this->getUser();
+			return view('admin', ['providers' => $providers, 'rates' => $rates, 'users' => $users]);
 		} else
 			return view('login');
 	}

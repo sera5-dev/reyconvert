@@ -7,6 +7,11 @@
 </head>
 
 <body>
+	<h1>Reyconvert: Admin</h1>
+	<a href="{{ route('logout')}}">logout</a>
+
+	<br />
+
 	<section>
 		<h2>Provider</h2>
 
@@ -28,7 +33,7 @@
 
 		<br>
 
-		<strong>Provider list</strong>
+		<strong>provider list</strong>
 		<table border="1">
 			<thead>
 				<th>id</th>
@@ -118,6 +123,77 @@
 				</tr>
 				@endforeach
 				@endif
+				@endforeach
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Admin</h2>
+		<strong>create admin</strong>
+		<form action="{{ route('user-create') }}" method="post">
+			@csrf
+			<div class="form-group">
+				<label for="nama">nama</label>
+				<input type="text" name="nama" id="">
+			</div>
+
+			<div class="form-group">
+				<label for="email">email</label>
+				<input type="email" name="email" id="">
+			</div>
+
+			<div class="form-group">
+				<label for="username">username</label>
+				<input type="text" name="username" id="">
+			</div>
+
+			<div class="form-group">
+				<label for="password">password</label>
+				<input type="password" name="password" id="">
+			</div>
+
+			<div class="form-group">
+				<label for="password_confirmation">confirm password</label>
+				<input type="password" name="password_confirmation" id="">
+			</div>
+
+			<div class="form-group">
+				<input type="submit" value="create">
+			</div>
+		</form>
+		<br />
+		<strong>admin list</strong>
+		<table border="1">
+			<thead>
+				<th>id</th>
+				<th>nama</th>
+				<th>email</th>
+				<th>username</th>
+				<th>action</th>
+			</thead>
+			<tbody>
+				@foreach($users as $user)
+				<tr>
+					<td>{{$user->id}}</td>
+					<td>{{$user->nama}}</td>
+					<td>{{$user->email}}</td>
+					<td>{{$user->username}}</td>
+					@if($user->id == 1)
+					<td>
+						<input type="submit" value="delete" disabled>
+					</td>
+					@else
+					<td>
+						<form action="{{route('user-delete')}}" method="post">
+							@csrf
+							@method('DELETE')
+							<input type="hidden" name="id" value="{{$user->id}}">
+							<input type="submit" value="delete">
+						</form>
+					</td>
+					@endif
+				</tr>
 				@endforeach
 			</tbody>
 		</table>

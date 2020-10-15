@@ -18,8 +18,42 @@ use \App\Http\Controllers\HomeController;
 
 Route::get('/', 			[HomeController::class, 'index'])->name('home');
 Route::get('/admin',	[HomeController::class, 'admin'])->name('admin');
-Route::get('/logout',	[HomeController::class, 'logout']);
+Route::get('/logout',	[HomeController::class, 'logout'])->name('logout');
 Route::post('/login', [HomeController::class, 'login'])->name('login');
+
+Route::post('/user', function (Request $request) {
+	try {
+		Http::withToken(session('token'))->post(env('API_URL') . '/register', [
+			'nama' 										=> $request->input('nama'),
+			'email' 									=> $request->input('email'),
+			'username' 								=> $request->input('username'),
+			'password' 								=> $request->input('password'),
+			'password_confirmation' 	=> $request->input('password_confirmation'),
+		]);
+
+		return redirect()->route('admin');
+	} catch (\Exception $e) {
+		return response()->json([
+			'message' => 'create user failed',
+			'error' => $e,
+		]);
+	}
+})->name('user-create');
+
+Route::delete('/user', function (Request $request) {
+	try {
+		Http::withToken(session('token'))->delete(env('API_URL') . '/unregister', [
+			'id' => $request->input('id'),
+		]);
+
+		return redirect()->route('admin');
+	} catch (\Exception $e) {
+		return response()->json([
+			'message' => 'delete user failed',
+			'error' => $e,
+		]);
+	}
+})->name('user-delete');
 
 Route::post('/provider', function (Request $request) {
 	try {
