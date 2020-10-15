@@ -23,12 +23,33 @@
 		<li>{{$rate->provider}}</li>
 		@foreach($rate->rate as $rt)
 		<ul>
-			<li>rate : {{$rt->rate}}</li>
-			<li>pulsa : {{$rt->pulsa}}</li>
-			<li>uang : {{$rt->uang}}</li>
+			<li>
+				<div>
+					rate : {{$rt->rate}}
+				</div>
+				<div>
+					pulsa : {{$rt->pulsa}}
+				</div>
+				<div>
+					uang : {{$rt->uang}}
+				</div>
+			</li>
 		</ul>
 		@endforeach
 		@endforeach
+	</ul>
+
+	<h2>Testimoni</h2>
+	<ul>
+		<li>
+			@foreach($testimonis as $testi)
+			<div>
+				<div>{{$testi->nama}}</div>
+				<div>{{$testi->kontak}}</div>
+				<div>{{$testi->komentar}}</div>
+			</div>
+			@endforeach
+		</li>
 	</ul>
 
 	<h2>Kontak</h2>
