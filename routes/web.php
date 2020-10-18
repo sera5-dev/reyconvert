@@ -16,8 +16,15 @@ use \App\Http\Controllers\HomeController;
 |
 */
 
+Route::get('/admin',						[HomeController::class, 'admin'])->name('admin');
+Route::get('/admin/dashboard',	[HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/admin/provider',		[HomeController::class, 'provider'])->name('provider');
+Route::get('/admin/rate',				[HomeController::class, 'rate'])->name('rate');
+Route::get('/admin/testi',			[HomeController::class, 'testi'])->name('testi');
+Route::get('/admin/user',				[HomeController::class, 'user'])->name('user');
+
+
 Route::get('/', 			[HomeController::class, 'index'])->name('home');
-Route::get('/admin',	[HomeController::class, 'admin'])->name('admin');
 Route::get('/logout',	[HomeController::class, 'logout'])->name('logout');
 Route::post('/login', [HomeController::class, 'login'])->name('login');
 
@@ -31,7 +38,7 @@ Route::post('/user', function (Request $request) {
 			'password_confirmation' 	=> $request->input('password_confirmation'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('user');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'create user failed',
@@ -46,7 +53,7 @@ Route::delete('/user', function (Request $request) {
 			'id' => $request->input('id'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('user');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'delete user failed',
@@ -61,7 +68,7 @@ Route::post('/provider', function (Request $request) {
 			'nama' => $request->input('nama'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('provider');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'create provider failed',
@@ -76,7 +83,7 @@ Route::delete('/provider', function (Request $request) {
 			'id' => $request->input('id'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('provider');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'delete provider failed',
@@ -93,7 +100,7 @@ Route::post('/rate', function (Request $request) {
 			'pulsa' => $request->input('pulsa'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('rate');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'create rate failed',
@@ -108,7 +115,7 @@ Route::delete('/rate', function (Request $request) {
 			'id' => $request->input('id'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('rate');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'delete rate failed',
@@ -125,7 +132,7 @@ Route::post('/testimoni', function (Request $request) {
 			'komentar' 	=> $request->input('komentar'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('testi');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'create testimoni failed',
@@ -140,11 +147,11 @@ Route::delete('/testimoni', function (Request $request) {
 			'id' => $request->input('id'),
 		]);
 
-		return redirect()->route('admin');
+		return redirect()->route('testi');
 	} catch (\Exception $e) {
 		return response()->json([
 			'message' => 'delete testimoni failed',
 			'error' => $e,
 		]);
 	}
-})->name('testimoni-delete');
+})->name('testi-delete');

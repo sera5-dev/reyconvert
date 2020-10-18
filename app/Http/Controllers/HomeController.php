@@ -42,11 +42,55 @@ class HomeController extends Controller
 	public function admin()
 	{
 		return session('token') ?
-			view('admin', [
+			view('dashboard', [
 				'providers' 	=> $this->getProvider(),
 				'rates' 			=> $this->getRate(),
 				'users' 			=> $this->getUser(),
 				'testimonis' 	=> $this->getTestimoni(),
+			]) : view('login');
+	}
+
+	public function dashboard()
+	{
+		return session('token') ?
+			view('dashboard', [
+				'providers' 	=> $this->getProvider(),
+				'rates' 			=> $this->getRate(),
+				'users' 			=> $this->getUser(),
+				'testimonis' 	=> $this->getTestimoni(),
+			]) : view('login');
+	}
+
+	public function provider()
+	{
+		return session('token') ?
+			view('provider', [
+				'providers' 	=> $this->getProvider(),
+			]) : view('login');
+	}
+
+	public function rate()
+	{
+		return session('token') ?
+			view('rate', [
+				'rates' 			=> $this->getRate(),
+				'providers' 	=> $this->getProvider(),
+			]) : view('login');
+	}
+
+	public function testi()
+	{
+		return session('token') ?
+			view('testi', [
+				'testimonis' 	=> $this->getTestimoni(),
+			]) : view('login');
+	}
+
+	public function user()
+	{
+		return session('token') ?
+			view('user', [
+				'users' 			=> $this->getUser(),
 			]) : view('login');
 	}
 
@@ -65,7 +109,7 @@ class HomeController extends Controller
 
 			if (property_exists($data, 'token')) {
 				session()->put('token', $data->token);
-				return redirect()->route('admin');
+				return redirect()->route('dashboard');
 			} else {
 				session()->flush();
 				echo "login failed";
