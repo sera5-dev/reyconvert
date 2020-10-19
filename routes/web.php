@@ -24,7 +24,10 @@ Route::get('/admin/testi',			[HomeController::class, 'testi'])->name('testi');
 Route::get('/admin/user',				[HomeController::class, 'user'])->name('user');
 
 
-Route::get('/', 			[HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+	return view('temp');
+});
+//Route::get('/', 			[HomeController::class, 'index'])->name('home');
 Route::get('/logout',	[HomeController::class, 'logout'])->name('logout');
 Route::post('/login', [HomeController::class, 'login'])->name('login');
 
