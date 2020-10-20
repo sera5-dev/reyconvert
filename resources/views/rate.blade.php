@@ -4,9 +4,7 @@
 @section('rate', 'active')
 
 @section('content')
-
 <div class="row">
-
 	<div class="col-xl-8 col-lg-7">
 		<div class="card shadow mb-4">
 			<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -54,7 +52,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="col-xl-4 col-lg-5">
 		<div class="card shadow mb-4">
 			<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -71,15 +68,12 @@
 							@endforeach
 						</select>
 					</div>
-
 					<div class="form-group">
 						<input class="form-control" type="number" step="0.1" name="rate" placeholder="rate">
 					</div>
-
 					<div class="form-group">
 						<input class="form-control" type="number" name="pulsa" placeholder="pulsa">
 					</div>
-
 					<div class="form-group">
 						<input class="form-control btn btn-primary" type="submit" value="create">
 					</div>

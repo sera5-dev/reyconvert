@@ -12,9 +12,52 @@
 	<link rel="stylesheet" href="{{ asset('edu/vendors/owl-carousel/owl.carousel.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('edu/vendors/nice-select/css/nice-select.css') }}" />
 	<link rel="stylesheet" href="{{ asset('edu/css/style.css') }}" />
+	<script src="https://kit.fontawesome.com/2c373a26a9.js" crossorigin="anonymous"></script>
+
+	<style>
+		.float {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 120px;
+			background-color: #25d366;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 2px 2px 3px #999;
+			z-index: 100;
+		}
+
+		.tg {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #0088cc;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 2px 2px 3px #999;
+			z-index: 100;
+		}
+
+		.my-float {
+			margin-top: 16px;
+		}
+	</style>
 </head>
 
 <body>
+	<a href="http://wa.me/6281223071450" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+	</a>
+	<a href="http://t.me/Reyjualpulsa" class="tg" target="_blank">
+		<i class="fa fa-telegram my-float"></i>
+	</a>
 	<header class="header_area">
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
@@ -29,8 +72,9 @@
 
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
-					<a class="navbar-brand logo_h" href="index.html"><img src="{{ asset('edu/img/logo.png') }}" alt="" /></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<a class="navbar-brand text-uppercase" style="letter-spacing:2.5px" href="index.html">
+						<h3>Reyconvert</h3>
+					</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span> <span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
@@ -92,7 +136,7 @@
 								Best online education service In the world
 							</p>
 							<h2 class="text-uppercase mt-4 mb-5">
-								One Step Ahead This Season
+								Jasa jual beli pulsa
 							</h2>
 							<div>
 								<a href="#" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
@@ -110,7 +154,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h2 class="mb-3">Awesome Feature</h2>
+						<h2 class="mb-3">Support Berbagai Provider</h2>
 						<p>
 							Replenish man have thing gathering lights yielding shall you
 						</p>
@@ -165,10 +209,10 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h2 class="mb-3">Our Popular Courses</h2>
-						<p>
-							Replenish man have thing gathering lights yielding shall you
-						</p>
+						<h2 class="mb-3">Perbandingan Rate Tertinggi<h2>
+								<p>
+									Replenish man have thing gathering lights yielding shall you
+								</p>
 					</div>
 				</div>
 			</div>
@@ -506,7 +550,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h2 class="mb-3">Client say about me</h2>
+						<h2 class="mb-3">Testimoni</h2>
 						<p>
 							Replenish man have thing gathering lights yielding shall you
 						</p>
