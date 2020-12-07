@@ -80,13 +80,13 @@
           </button>
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/tutorial">Tutorial</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="/tentang">Tentang Kami</a>
               </li>
             </ul>
@@ -96,139 +96,94 @@
     </div>
   </header>
 
-  <section class="home_banner_area">
-    <div class="banner_inner">
+  <section class="section_gap_bottom">
+    <div class="popular_courses section_gap" style="padding-top: 10em; padding-bottom:0;">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner_content text-center">
-              <h2 class="mb-3">Perbandingan Rate Tertinggi</h2>
-              <p>
-                Reyconvert adalah Jasa Jual Beli Pulsa 24 Jam dan Jasa Pulsa Transfer Murah Yang Melayani Customer Dengan Cepat. Selain Menjadi Uang, Kami Juga Bisa Merubah Pulsa Menjadi E-Wallet atau E-Cash (Ovo, GoPay, Dana, dan Lainnya). <br> Jual Pulsa, Tukar Pulsa, dan Pulsa Transfer Murah yang mudah, aman, dan cepat hanya di Reyconvert.
-              </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <h1>TENTANG KAMI</h1>
+              <p>Selamat datang di Reyconvert</p>
+              <p>Jasa Convert Pulsa Sejak 2010</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <section class="feature_area section_gap_top">
+  <section class="section_gap_bottom">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
+      <div class="row align-items-center">
+        <div class="text-center">
           <div class="main_title">
-            <h2 class="mb-3">
-              Perhitungkan Biaya Dengan Pulsa Transfer
-            </h2>
+            <h3 class="mb-3">Apa itu Convert Pulsa?</h3>
             <p>
-              Penggunaan pulsa untuk kebutuhan berbelanja online seperti pada aplikasi Google Play Store di smartphone sudah sangat populer. Bagi anda yang ingin menghemat pengeluaran biaya anda, pulsa transfer adalah solusi cerdas untuk anda.
+              Convert Pulsa adalah merubah pulsa menjadi uang yang bisa diartikan juga tukar pulsa jadi uang, jadi semisal ada pulsa berlebih di HP itu bisa dijadikan uang. Bisa dikatakan REYCONVERT adalah solusi pembayaran modern , karena kami juga menyediakan fitur top up saldo seperti shopee , bukalapak , e-cash , paypro , gopay , OVO dan lain-lain dengan menggunakan pulsa.
             </p>
           </div>
+          <h1 class="mb-3 section_gap_top"><span class="kenapa">KENAPA HARUS REYCONVERT ??</span></h1>
+          <ol class="ketentuan text-left">
+            <li>
+              <h4>
+                REYCONVERT adalah satu-satunya </span><span style="color: #3366ff;"><a style="color: #3366ff;" href="http://www.reyconvert.com" target="_blank" rel="noopener">jasa convert pulsa</a></span> yang sudah berbentuk badan perusahaan. Semua menggunakan metode profesional mulai dari pelayanan yang ramah, respon cepat dan proses pengiriman hanya 5 menit.</span>
+              </h4>
+            </li>
+            <li>
+              <h4>
+                Kami juga bersistem seperti halnya perusahaan digital lainnya yaitu terdiri dari 8 admin dan 12 CS.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                Kami memiliki 2 kantor yang terdiri dari 1 kantor pusat dan 1 kantor cabang, sehingga pelayanan kami selalu prioritas untuk anda.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                Harga / rate yang bagus. Anda bisa mendapatkan info ter-update tentang perkiraan rate yang akan datang di program <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.reyconvert.com/vip-area/">VIP-AREA</a></span> kami.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                Jadwal open yang pasti, REYCONVERT open setiap hari selama <span style="color: #ff0000;"><strong><span style="text-decoration: underline;">24 JAM</span></strong>.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                REYCONVERT melayani 5 operator besar seperti TELKOMSEL, XL / AXIS, INDOSAT, dan THREE serta kami menyediakan bank BCA / BRI / BNI / Mandiri.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                REYCONVERT menyedikan fitur Solusi Pembayaran Modern yang bisa disebut seperti dompet digital. Jadi kamu bisa melakukan pembayaran atau pembelian apapun dengan menggunakan pulsa.
+              </h4>
+            </li>
+            <li>
+              <h4>
+                REYCONVERT juga menyediakan kerja sama antar online shop yang ingin menambah pembayarannya dengan menggunakan pulsa. Jadi para online shop yang target pasarnya belum memiliki rekening bank tidak perlu khawatir, karena bisa open pembayaran dengan menggunakan pulsa.
+              </h4>
+            </li>
+          </ol> <br>
+          <h4 class="text-left">
+            Demikian penjelasan tentang REYCONVERT beserta fitur-fiturnya. Bagi anda yang memiliki pulsa berlebih, daripada terbuang sia – sia maka anda dapat melakukan penukaran <span style="color: #3366ff;"><a style="color: #3366ff;" href="http://www.reyconvert.com" target="_blank" rel="noopener">pulsa menjadi uang</a></span> sehingga lebih bermanfaat. Anda juga dapat mengajak dan memberikan informasi kepada rekan – rekan anda jika memiliki pulsa berlebih. <span style="color: #3366ff;"><a style="color: #3366ff;" href="http://www.reyconvert.com" target="_blank" rel="noopener">Convert Pulsa</a></span> juga bermanfaat bagi anda yang memiliki masa aktif kartu mendekati expired.
+          </h4>
         </div>
       </div>
-      <div class="row">
-        <h3>Cek Ilustrasi Berikut: </h3>
-        <div>
-          <p>
-            Semisal anda memutuskan untuk membeli aplikasi atau layanannya seharga Rp 50.000
-          </p>
-          <p>
-            Maka, biaya yang akan anda keluarkan tidak Rp 50.000, melainkan Rp 52.000. Itu karena anda membeli pulsa reguler seharga Rp52.000
-          </p>
-          <p>
-            Jika anda menggunakan Pulsa Transfer, maka biaya yang dibutuhkan adalah Rp 48.500 (Harga Kurang Lebihnya)
-          </p>
-          <p>
-            Namun, ketika anda memutuskan untuk membeli Pulsa Transfer seharga Rp 500.000 harga yang ditawarkan akan jauh lebih murah lagi, yaitu Rp 466.000 (Harga Kurang Lebihnya)
-          </p>
-          <p>
-            Semakin tinggi nominal Pulsa Transfer yang anda beli, akan semakin murah juga harganya.
-          </p>
-        </div>
-      </div>
+    </div>
   </section>
 
-  <section class="feature_area section_gap_top">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="main_title">
-            <h2 class="mb-3">
-              Provider yang didukung
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <table class="table">
-          @foreach($providers as $provider)
-          <tr>
-            <td>
-              <h3>{{ ucfirst($provider->nama) }}</h3>
-            </td>
-          </tr>
-          @endforeach
-        </table>
-      </div>
-  </section>
-
-  <section class="feature_area section_gap_top">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="main_title">
-            <h2 class="mb-3">
-              Rate Pulsa
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        @foreach($rates as $provider)
-        <div class="col-md-12">
-          <div>
-            <h3>{{ ucfirst($provider->provider) }}</h3>
-            <table class="table">
-              <thead>
-                <th>Rate</th>
-                <th>Pulsa</th>
-                <th>Uang</th>
-              </thead>
-              <tbody>
-                @foreach($provider->rate as $rate)
-                <tr>
-                  <td>{{ $rate->rate }}</td>
-                  <td>{{ $rate->pulsa }}</td>
-                  <td>{{ $rate->uang }}</td>
-                </tr>
-                @endforeach
-              </tbody>
-            </table>
-          </div>
-        </div>
-        @endforeach
-      </div>
-  </section>
-
-  <section class="feature_area section_gap_top">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="main_title">
-            <h2 class="mb-3">
-              Testimoni
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        @foreach($testimonis as $testi)
-        <div class="col-md-4">
-          <h3>{{ ucfirst($testi->nama) }}</h3>
-          <p>{{ $testi->komentar}}</p>
-        </div>
-        @endforeach
-      </div>
+  <section class="section_gap_bottom">
+    <div class="col-lg-12 text-center">
+      <h1>REYCONVERT</h1>
+      <p>Reyconvert adalah wadah / pengepul / penampung pulsa atau trendnya disebut jasa convert pulsa / tukar pulsa jadi uang.</p>
+      <p Jl. Rokan No. 17B<br>
+        Madiun – 63133<br>
+        Jawa Timur<br>
+        Indonesia
+      </p>
+      <a href="https://api.whatsapp.com/send?phone=6287858004797" class="btn button-primary whatsapp" role="button">WHATSAPP KAMI</a>
+    </div>
   </section>
 
   <footer class="footer-area section_gap">
