@@ -5,31 +5,28 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\HomeController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/admin',            [HomeController::class, 'admin'])->name('admin');
 Route::get('/admin/dashboard',  [HomeController::class, 'dashboard'])->name('dashboard');
-Route::get('/admin/provider',    [HomeController::class, 'provider'])->name('provider');
-Route::get('/admin/rate',        [HomeController::class, 'rate'])->name('rate');
+Route::get('/admin/provider',   [HomeController::class, 'provider'])->name('provider');
+Route::get('/admin/rate',       [HomeController::class, 'rate'])->name('rate');
 Route::get('/admin/testi',      [HomeController::class, 'testi'])->name('testi');
-Route::get('/admin/user',        [HomeController::class, 'user'])->name('user');
+Route::get('/admin/user',       [HomeController::class, 'user'])->name('user');
+Route::get('/',                 [HomeController::class, 'index'])->name('home');
 
-
-Route::get('/',       [HomeController::class, 'index'])->name('home');
 Route::get('/tutorial', function () {
   return view('tutorial');
 });
+
 Route::get('/tentang', function () {
   return view('tentang');
+});
+
+Route::get('/testimoni', function () {
+  return view('testimoni');
+});
+
+Route::get('/blog', function () {
+  return view('blog');
 });
 
 Route::get('/logout',  [HomeController::class, 'logout'])->name('logout');
