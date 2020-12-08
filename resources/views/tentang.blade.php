@@ -4,51 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="{{ asset('edu/img/favicon.png') }}" type="image/png" />
-  <title>{{ env('APP_NAME')}}</title>
-  <link rel="stylesheet" href="{{ asset('edu/css/bootstrap.css') }}" />
-  <link rel="stylesheet" href="{{ asset('edu/css/flaticon.css') }}" />
-  <link rel="stylesheet" href="{{ asset('edu/css/themify-icons.css') }}" />
-  <link rel="stylesheet" href="{{ asset('edu/vendors/owl-carousel/owl.carousel.min.css') }}" />
-  <link rel="stylesheet" href="{{ asset('edu/vendors/nice-select/css/nice-select.css') }}" />
-  <link rel="stylesheet" href="{{ asset('edu/css/style.css') }}" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <title>Reyconvert | Home</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/flaticon.css" />
+  <link rel="stylesheet" href="assets/css/themify-icons.css" />
+  <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/vendors/nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://kit.fontawesome.com/2c373a26a9.js" crossorigin="anonymous"></script>
-
-  <style>
-    .float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 120px;
-      background-color: #25d366;
-      color: #FFF;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-    }
-
-    .tg {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #0088cc;
-      color: #FFF;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-    }
-
-    .my-float {
-      margin-top: 16px;
-    }
-  </style>
 </head>
 
 <body>
@@ -60,67 +24,80 @@
   </a>
   <header class="header_area">
     <div class="main_menu">
-      <div class="search_input" id="search_input_box">
-        <div class="container">
-          <form class="d-flex justify-content-between" method="" action="">
-            <input type="text" class="form-control" id="search_input" placeholder="Search Here" />
-            <button type="submit" class="btn"></button>
-            <span class="ti-close" id="close_search" title="Close Search"></span>
-          </form>
-        </div>
-      </div>
-
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand text-uppercase" style="letter-spacing:2.5px" href="index.html">
+          <a class="navbar-brand text-uppercase" style="letter-spacing:2.5px" href="/">
             <h3>Reyconvert</h3>
           </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/tutorial">Tutorial</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/tentang">Tentang Kami</a>
-              </li>
-            </ul>
-          </div>
+          </button//> <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/tutorial">Tutorial</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/tentang">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/testimoni">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+          </ul>
         </div>
       </nav>
+
     </div>
   </header>
 
-  <section class="section_gap_bottom">
-    <div class="popular_courses section_gap" style="padding-top: 10em; padding-bottom:0;">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="main_title">
-              <h1>TENTANG KAMI</h1>
-              <p>Selamat datang di Reyconvert</p>
-              <p>Jasa Convert Pulsa Sejak 2010</p>
-            </div>
-          </div>
+  <div class="popular_courses section_gap_bottom">
+
+  </div>
+
+  <section class="popular_course parallax section_gap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
         </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <h1><span class="text-white">TENTANG KAMI</span></h1><br>
+        <p><span class="text-white">Selamat datang di Reyconvert</span></p>
+        <p><span class="text-white">Jasa Convert Pulsa Sejak 2010</span></p>
       </div>
     </div>
   </section>
 
-  <section class="section_gap_bottom">
+  <div class="popular_courses section_gap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <img src="assets/img/cert.jpg" alt="" style="width: 40%;">
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div style="border-style: solid; border-width: 0px 0px 1px 0px; border-color: #d6d6d6; box-shadow: 0px -8px 28px 0px rgba(0,0,0,0.2); transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;">
+      <div class="text-center p-3 m-3">
+        <img src="assets/img/provider-dukungan-1536x170.png" alt="" style="width: 80%;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section_gap_top" style="width:100%;">
     <div class="container">
       <div class="row align-items-center">
         <div class="text-center">
           <div class="main_title">
-            <h3 class="mb-3">Apa itu Convert Pulsa?</h3>
-            <p>
-              Convert Pulsa adalah merubah pulsa menjadi uang yang bisa diartikan juga tukar pulsa jadi uang, jadi semisal ada pulsa berlebih di HP itu bisa dijadikan uang. Bisa dikatakan REYCONVERT adalah solusi pembayaran modern , karena kami juga menyediakan fitur top up saldo seperti shopee , bukalapak , e-cash , paypro , gopay , OVO dan lain-lain dengan menggunakan pulsa.
-            </p>
+            <h3 class="mb-3">Apa itu Convert Pulsa?<h3>
+                <p>
+                  Convert Pulsa adalah merubah pulsa menjadi uang yang bisa diartikan juga tukar pulsa jadi uang, jadi semisal ada pulsa berlebih di HP itu bisa dijadikan uang. Bisa dikatakan REYCONVERT adalah solusi pembayaran modern , karena kami juga menyediakan fitur top up saldo seperti shopee , bukalapak , e-cash , paypro , gopay , OVO dan lain-lain dengan menggunakan pulsa.
+                </p>
           </div>
           <h1 class="mb-3 section_gap_top"><span class="kenapa">KENAPA HARUS REYCONVERT ??</span></h1>
           <ol class="ketentuan text-left">
@@ -171,89 +148,276 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="section_gap_bottom">
-    <div class="col-lg-12 text-center">
-      <h1>REYCONVERT</h1>
-      <p>Reyconvert adalah wadah / pengepul / penampung pulsa atau trendnya disebut jasa convert pulsa / tukar pulsa jadi uang.</p>
-      <p Jl. Rokan No. 17B<br>
-        Madiun – 63133<br>
-        Jawa Timur<br>
-        Indonesia
-      </p>
-      <a href="https://api.whatsapp.com/send?phone=6287858004797" class="btn button-primary whatsapp" role="button">WHATSAPP KAMI</a>
     </div>
   </section>
 
-  <footer class="footer-area section_gap">
+  <section class="section_gap_bottom">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-6 single-footer-widget">
-          <h4>Kontak Whatsapp</h4>
-          <ul>
-            <li>
-              <a href="https://wa.me/62857363526248 ">
-                0857363526248
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/62819465876235">
-                0819465876235
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/62878580046297 ">
-                0878580046297
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/6282244797850 ">
-                082244797850
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 single-footer-widget">
-          <h4>Kontak Telegram</h4>
-          <ul>
-            <li><a href=" http://t.me/62857363526248">
-                0857363526248
-              </a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 single-footer-widget">
-          <h4>Alamat</h4>
-          <a href="" class="footer-link">
-            <i aria-hidden="true" class="fas fa-map-marker-alt small footer-icon"></i>
-            Reyconvert
-            Jalan Rokan No. 17B
-            Madiun, Jawa Timur
-            63133
-          </a>
+      <div class="row align-items-center">
+        <div class="text-center">
+          <div class="main_title">
+            <h3 class="mb-3">Apa itu Convert Pulsa?<h3>
+                <p>
+                  Convert Pulsa adalah merubah pulsa menjadi uang yang bisa diartikan juga tukar pulsa jadi uang, jadi semisal ada pulsa berlebih di HP itu bisa dijadikan uang. Bisa dikatakan REYCONVERT adalah solusi pembayaran modern , karena kami juga menyediakan fitur top up saldo seperti shopee , bukalapak , e-cash , paypro , gopay , OVO dan lain-lain dengan menggunakan pulsa.
+                </p>
+          </div>
+          <h1 class="mb-3"><span class="kenapa">BERIKUT NAMA NAMA CS REYCONVERT:</span></h1>
         </div>
       </div>
-      <div class="row footer-bottom d-flex justify-content-between">
-        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+    </div>
+
+    <div class="row pt-5 pb-5" style="background-color: rgba(241,243,245,0.5); margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="text-center  pb-5 pt-5" style="position: relative; top: 30%;">
+          <h1>1. CS YULI</h1>
+          <p>Hobi: Nonton Anime</p>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-YULI.jpg" alt="" style="width: 80%;">
+      </div>
+    </div>
+
+    <div class="row section pt-5 pb-5" style=" margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-Nadia.jpg" alt="" style="width: 80%;">
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 pb-5 pt-5">
+        <div class="text-center" style="position: relative; top: 30%;">
+          <h1>2. CS NADIA</h1>
+          <p>Hobi: Dengerin Lagu</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5 pb-5" style="background-color: rgba(241,243,245,0.5); margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="text-center  pb-5 pt-5" style="position: relative; top: 30%;">
+          <h1>3. CS RESTI</h1>
+          <p>Hobi: Nulis</p>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-RESTI.jpg" alt="" style="width: 80%;">
+      </div>
+    </div>
+
+    <div class="row section pt-5 pb-5" style=" margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-FIA.jpg" alt="" style="width: 80%;">
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 pb-5 pt-5">
+        <div class="text-center" style="position: relative; top: 30%;">
+          <h1>4. CS FIA</h1>
+          <p>Hobi: Dance K-Pop</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5 pb-5" style="background-color: rgba(241,243,245,0.5); margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="text-center  pb-5 pt-5" style="position: relative; top: 30%;">
+          <h1>5. CS DEVI</h1>
+          <p>Hobi: Makan</p>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-DEVIII.jpg" alt="" style="width: 80%;">
+      </div>
+    </div>
+
+    <div class="row section pt-5 pb-5" style=" margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-BELLA.jpg" alt="" style="width: 80%;">
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 pb-5 pt-5">
+        <div class="text-center" style="position: relative; top: 30%;">
+          <h1>6. CS BELLA</h1>
+          <p>Hobi: Menyanyi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5 pb-5" style="background-color: rgba(241,243,245,0.5); margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="text-center  pb-5 pt-5" style="position: relative; top: 30%;">
+          <h1>7. CS DANUNG</h1>
+          <p>Hobi: Hiking</p>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-DANUNG.jpg" alt="" style="width: 80%;">
+      </div>
+    </div>
+
+    <div class="row section pt-5 pb-5" style=" margin: auto; padding:auto;">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/CS-DEWI.jpg" alt="" style="width: 80%;">
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 pb-5 pt-5">
+        <div class="text-center" style="position: relative; top: 30%;">
+          <h1>8. CS DEWI</h1>
+          <p>Hobi: Travelling</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="parallax section_gap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+        </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <h1><span class="text-white">REYCONVERT</span></h1>
+        <p><span class="text-white">Reyconvert adalah wadah / pengepul / penampung pulsa atau trendnya disebut jasa convert pulsa / tukar pulsa jadi uang.</span></p><br><br>
+        <p class="text-white">
+          Jl. Raya Kawali-Panjalu<br>
+          Lumbung Kabupaten Ciamis<br>
+          Jawa Barat<br>
+          Indonesia<br><br>
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=6287858004797" class="btn button-primary whatsapp" role="button">WHATSAPP KAMI</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area p-4">
+    <div class="container bagian-bawah">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <p class="text-center subsub">Kontak Kami</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 single-footer-widget">
+                <ul>
+                  <li>
+                    <a href="" class="footer-link">
+                      <i aria-hidden="true" class="fas fa-map-marker-alt small footer-icon"></i>
+                      Reyconvert
+                      Jl. Raya Kawali-Panjalu , Lumbung Kabupaten Ciamis Jawa Barat
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 col-md-6 single-footer-widget">
+                <ul>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-whatsapp footer-icon"></i></span> 085736352448</a></li>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-whatsapp footer-icon"></i></span> 081946587535</a></li>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-whatsapp footer-icon"></i></span> 087858004797</a></li>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-whatsapp footer-icon"></i></span> 082244797850</a></li><br>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-whatsapp footer-icon"></i></span> 081223071450</a></li>
+                  <br>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-telegram footer-icon"></i></span> @reyjualpulsa</a></li>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-instagram footer-icon"></i></span> @reyjualpulsa</a></li>
+                  <li><a href="#" class="footer-link"><span><i aria-hidden="true" class="fab fa-youtube footer-icon"></i></span> Reyconvert</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <p class="text-center subsub">Post Terbaru</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 single-footer-widget">
+                <ul>
+                  <li>
+                    <a href="" class="footer-link">
+                      <span><i aria-hidden="true" class="fas fa-chevron-circle-right small footer-icon"></i></span> Layanan Jasa Convert Pulsa, Apa Itu Convert Pulsa?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-link">
+                      <span><i aria-hidden="true" class="fas fa-chevron-circle-right small footer-icon"></i></span> Layanan Jasa Convert Pulsa, Apa Itu Convert Pulsa?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-link">
+                      <span><i aria-hidden="true" class="fas fa-chevron-circle-right small footer-icon"></i></span> Layanan Jasa Convert Pulsa, Apa Itu Convert Pulsa?
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 col-md-6 single-footer-widget">
+                <ul>
+                  <div class="row">
+                    <div class="col-lg-4 col sm-4">
+                      <img src="" alt="">
+                    </div>
+                    <div class="col-lg-8 col sm-8">
+                      <a href="" class="footer-link">Cara Convert Pulsa Di Aplikasi Viapulsa "Anti" Slow Respon</a>
+                      <p>12/10/2019 05:38</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4 col sm-4">
+                      <img src="" alt="">
+                    </div>
+                    <div class="col-lg-8 col sm-8">
+                      <a href="" class="footer-link">Cara Convert Pulsa Di Aplikasi Viapulsa “Anti” Slow Respon</a>
+                      <p>12/10/2019 05:38</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4 col sm-4">
+                      <img src="" alt="">
+                    </div>
+                    <div class="col-lg-8 col sm-8">
+                      <a href="" class="footer-link">Cara Convert Pulsa Di Aplikasi Viapulsa “Anti” Slow Respon</a>
+                      <p>12/10/2019 05:38</p>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <p class="col-lg-8 col-sm-12 footer-text copyright">
           Copyright &copy;<script>
             document.write(new Date().getFullYear());
           </script> All rights reserved
         </p>
       </div>
+
     </div>
   </footer>
 
-  <script src="{{ asset('edu/js/jquery-3.2.1.min.js') }}"></script>
-  <script src="{{ asset('edu/js/popper.js') }}"></script>
-  <script src="{{ asset('edu/js/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('edu/vendors/nice-select/js/jquery.nice-select.min.js') }}"></script>
-  <script src="{{ asset('edu/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('edu/js/owl-carousel-thumb.min.js') }}"></script>
-  <script src="{{ asset('edu/js/jquery.ajaxchimp.min.js') }}"></script>
-  <script src="{{ asset('edu/js/mail-script.js') }}"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/js/owl-carousel-thumb.min.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/mail-script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="{{ asset('edu/js/gmaps.min.js') }}"></script>
-  <script src="{{ asset('edu/js/theme.js') }}"></script>
+  <script src="assets/js/gmaps.min.js"></script>
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
