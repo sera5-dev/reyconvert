@@ -21,6 +21,8 @@
               <th>nama</th>
               <th>kontak</th>
               <th>komentar</th>
+              <th>video</th>
+              <th>star</th>
               <th>action</th>
             </thead>
             <tbody>
@@ -30,6 +32,8 @@
                 <td>{{$testi->nama}}</td>
                 <td>{{$testi->kontak}}</td>
                 <td>{{$testi->komentar}}</td>
+                <td>{{$testi->video}}</td>
+                <td>{{$testi->star}}</td>
                 <td>
                   <form action="{{route('testi-delete')}}" method="post">
                     @csrf
@@ -65,6 +69,19 @@
           </div>
           <div class="form-group">
             <textarea class="form-control " type="text" name="komentar" placeholder="komentar" required></textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control " type="text" name="video" placeholder="link video (optional)"></textarea>
+          </div>
+          <div class="form-group">
+            <select name="star" class="form-control">
+              <option disabled>Nilai Testimoni</option>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
           </div>
           <div class="form-group">
             <input type="submit" class="form-control  btn btn-primary" value="create">
