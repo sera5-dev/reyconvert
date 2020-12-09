@@ -86,6 +86,11 @@ class HomeController extends Controller
       ]) : view('login');
   }
 
+  public function testimoni()
+  {
+    return view('testimoni', ['testimonis'   => $this->getTestimoni(),]);
+  }
+
   public function user()
   {
     return session('token') ?

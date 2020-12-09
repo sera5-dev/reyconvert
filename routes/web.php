@@ -12,6 +12,7 @@ Route::get('/admin/rate',       [HomeController::class, 'rate'])->name('rate');
 Route::get('/admin/testi',      [HomeController::class, 'testi'])->name('testi');
 Route::get('/admin/user',       [HomeController::class, 'user'])->name('user');
 Route::get('/',                 [HomeController::class, 'index'])->name('home');
+Route::get('/testimoni',        [HomeController::class, 'testimoni'])->name('home');
 
 Route::get('/tutorial', function () {
   return view('tutorial');
@@ -19,10 +20,6 @@ Route::get('/tutorial', function () {
 
 Route::get('/tentang', function () {
   return view('tentang');
-});
-
-Route::get('/testimoni', function () {
-  return view('testimoni');
 });
 
 Route::get('/blog', function () {
@@ -136,6 +133,7 @@ Route::post('/testimoni', function (Request $request) {
       'komentar'   => $request->input('komentar'),
       'video'      => $request->input('video'),
       'star'       => $request->input('star'),
+      'tanggal'    => $request->input('tanggal'),
     ]);
 
     return redirect()->route('testi');

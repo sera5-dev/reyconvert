@@ -59,12 +59,6 @@
 
   </div>
 
-  <section class="">
-    <div class="container">
-      <p>Testimonial | <span><a href="./kirim-testimoni/">Kirim Tesimonial</a></span></p>
-    </div>
-  </section>
-
   <div class="popular_courses m-3 p-3">
     <div class="container">
       <div class="text-center">
@@ -73,6 +67,7 @@
     </div>
   </div>
 
+  <!--
   <div class="container">
     <div class="row justify-content-center">
       <nav aria-label="...">
@@ -92,58 +87,45 @@
       </nav>
     </div>
   </div>
+  -->
 
   <section>
     <div class="container">
       <div class="row justify-content-center">
+
+        @foreach($testimonis as $testimoni)
+
         <div class="col-lg-3 bg-light text-center" style="padding-top:5em; padding-bottom:5em; margin:1em;">
-          <p class="testimoni testimoni-title"><i>...</i></p>
           <i class="fas fa-quote-left"></i>
-          <span class="testimoni"><i>...</i></span>
+          <span class="testimoni">
+            {{ $testimoni->komentar}}
+          </span>
           <i class="fas fa-quote-right"></i>
           <p></p>
-          <p>nama</p>
-          <p>tanggal</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
+          <p>{{ $testimoni->nama}}</p>
+          <p>{{ $testimoni->created_at}}</p>
+
+          <?php $count = 0; ?>
+          <?php for ($i = 0; $i < $testimoni->star; $i++) { ?>
+            <span class="fa fa-star checked"></span>
+            <?php $count++ ?>
+          <?php } ?>
+          <?php $selisih = 5 - $count ?>
+
+          @if($selisih != 0)
+          <?php for ($i = 0; $i < $selisih; $i++) { ?>
+            <span class="fa fa-star"></span>
+          <?php } ?>
+          @endif
         </div>
 
-        <div class="col-lg-3 bg-light text-center" style="padding:5em; margin:1em;">
-          <p class="testimoni testimoni-title"><i>...</i></p>
-          <i class="fas fa-quote-left"></i>
-          <span class="testimoni"><i>...</i></span>
-          <i class="fas fa-quote-right"></i>
-          <p></p>
-          <p>nama</p>
-          <p>tanggal</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </div>
+        @endforeach
 
-        <div class="col-lg-3 bg-light text-center" style="padding:5em; margin:1em;">
-          <p class="testimoni testimoni-title"><i>...</i></p>
-          <i class="fas fa-quote-left"></i>
-          <span class="testimoni"><i>...</i></span>
-          <i class="fas fa-quote-right"></i>
-          <p></p>
-          <p>nama</p>
-          <p>tanggal</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </div>
       </div>
     </div>
   </section>
 
+  <!--
   <div class="container">
     <div class="row justify-content-center">
       <nav aria-label="...">
@@ -185,6 +167,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <footer class="footer-area p-4">
     <div class="container bagian-bawah">
@@ -306,4 +289,4 @@
   <script src="assets/js/theme.js"></script>
 </body>
 
-r/html>
+</html>

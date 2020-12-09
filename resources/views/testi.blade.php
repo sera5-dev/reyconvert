@@ -84,6 +84,9 @@
             </select>
           </div>
           <div class="form-group">
+            <input type="date" name="tanggal" class="form-control" id="">
+          </div>
+          <div class="form-group">
             <input type="submit" class="form-control  btn btn-primary" value="create">
           </div>
         </form>
