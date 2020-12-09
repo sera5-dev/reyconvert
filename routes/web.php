@@ -134,6 +134,8 @@ Route::post('/testimoni', function (Request $request) {
       'nama'       => $request->input('nama'),
       'kontak'     => $request->input('kontak'),
       'komentar'   => $request->input('komentar'),
+      'video'      => $request->input('video'),
+      'star'       => $request->input('star'),
     ]);
 
     return redirect()->route('testi');
