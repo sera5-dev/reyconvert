@@ -235,31 +235,33 @@ t
       }
     </style>
 
-    <div class="row">
-      <div class="col-md-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table" style="width:100%">
+            <tr>
+              <th>Provider</th>
+              <th>Rate</th>
+
+            </tr>
+            <tr>
+              <td>Telkomsel</td>
+              <td>0,90</td>
+
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>0,90</td>
+
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>0,90</td>
+
+            </tr>
+          </table>
+        </div>
       </div>
-      <table class="table" style="width:100%">
-        <tr>
-          <th>Provider</th>
-          <th>Rate</th>
-
-        </tr>
-        <tr>
-          <td>Telkomsel</td>
-          <td>0,90</td>
-
-        </tr>
-        <tr>
-          <td>XL</td>
-          <td>0,90</td>
-
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>0,90</td>
-
-        </tr>
-      </table>
     </div>
   </section>
 
@@ -267,7 +269,7 @@ t
 
     <div class="text-center">
       <h2>Provider yang didukung</h2>
-      <img src="assets/img/provider-dukungan-1536x170.png" alt="" style="width: 80%; align:center;">
+      <img src="assets/img/provider-dukungan-1536x170.png" alt="" style="width: 80%; text-align:center;">
     </div>
   </section>
 
