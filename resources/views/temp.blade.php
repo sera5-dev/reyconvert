@@ -1,4 +1,3 @@
-t
 <!DOCTYPE html>
 <html lang="en">
 
@@ -226,14 +225,6 @@ t
       var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
       document.getElementById("tanggalwaktu").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + tahun + " Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10) ? "0" : "") + tw.getMinutes() + (" WIB ");
     </script>
-
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-    </style>
 
     <div class="container">
       <div class="row">
