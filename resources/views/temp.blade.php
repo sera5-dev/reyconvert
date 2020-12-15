@@ -235,28 +235,32 @@ t
       }
     </style>
 
-    <table class="col-lg-6 col-md-6 col-sm-6" style="width:100%">
-      <tr>
-        <th>Provider</th>
-        <th>Rate</th>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+      <table class="table" style="width:100%">
+        <tr>
+          <th>Provider</th>
+          <th>Rate</th>
 
-      </tr>
-      <tr>
-        <td>Telkomsel</td>
-        <td>0,90</td>
+        </tr>
+        <tr>
+          <td>Telkomsel</td>
+          <td>0,90</td>
 
-      </tr>
-      <tr>
-        <td>XL</td>
-        <td>0,90</td>
+        </tr>
+        <tr>
+          <td>XL</td>
+          <td>0,90</td>
 
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>0,90</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>0,90</td>
 
-      </tr>
-    </table>
+        </tr>
+      </table>
+    </div>
   </section>
 
   <section>
